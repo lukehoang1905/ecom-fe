@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Ecommerce Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Yes! Ecommerce website , the constant headlines material in this era. No matter where you are right now on plannet earth, as long as you are connected to the internet, you are a pottential if not yet a customer of E-commerce. Today we are building together a simple Ecommerce website that handles some of the fundamentails requirement of a web of this nature.
 
-## Available Scripts
+In this guide, we will walk through every step in detail the entire process. However, you will be provided with boilerplate and hints which pointing to the right direction with out 100% solution. You are required to identify missing code, logics as well as bugs and pottential improvement. Sound like an enormous task, but hey, we did choose programming because it easy.
 
-In the project directory, you can run:
+So, let's get our fingers warm up and start coding:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In a proper Ecommerce platforms, there would be multiple sellers and multiple customers. However, in our simple online shop, there are Public User, Register User and Admin who is also the owner of products sold on the web.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Public User
 
-### `npm test`
+- User can Navigate through **Navbar** or other **Links/Buttons** in pages
+- User can login / register / logout in its **Pages**
+- User can see all/filtered products with **Pagination**,
+  request for single product detail, request for add to cart in **Home Page**
+- User can see detail of single product, request for add to cart in **Product Detail Page**
+  request checkout and redirect to **Login**
+- User see notifications according to result of behaviors in **Alert Message**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Registered User
 
-### `npm run build`
+- Inherit all Public User features and :
+- R.User can have persistent login
+- R.User can check profile detail in **Profile Page**
+- R.User can checkout cart, make payment with their tokens in **Checkout Page**
+- R.User can check orders history in **History Page**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Admin
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Inherit all features and :
+- Admin can see all Users, Product list ,Orders history through **Dashboard**
+- Admin can add , edit and delete products through **Add/edit Page**
+- Admin can top up user balance **Topup Balance**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Implementation
 
-### `npm run eject`
+### Client side
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Let's get started:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Monday
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Project setup**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Setup a React App](./docs/00_setup_project.md)
+- [Project Structure](./docs/01_project_structure.md)
+- [Redux configuration](./docs/02_redux_config.md)
+- [React Router and layouts](./docs/03_routes_layouts.md)
 
-## Learn More
+**Basic Features**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [User can see a list of blogs in the home page](./docs/04_get_blogs.md)
